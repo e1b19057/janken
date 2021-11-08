@@ -3,15 +3,24 @@
 
 <head>
   <meta charset="utf-8">
-  <title>SpringBoot Sample2-6</title>
+  <title>janken</title>
 </head>
 
 <body>
-
+  <h1>Lec02 GET!</h1>
   <div>
     [[${name}]]
   </div>
-  </p>
+  <div>
+    <a href="lec02janken?me=Gu">ぐー</a>
+    <a href="lec02janken?me=Choki">ちょき</a>
+    <a href="lec02janken?me=Pa">ぱー</a>
+  </div>
+  <div th:if="${janken}">
+    <p>あなたの手 [[${me}]]</p>
+    <p>相手の手 [[${you}]]</p>
+    <p>結果 [[${j}]]</p>
+  </div>
 </body>
 
 </html>

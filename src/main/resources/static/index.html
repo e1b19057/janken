@@ -1,29 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 
 <head>
   <meta charset="utf-8">
-  <title>SpringBoot Sample2-6</title>
 </head>
 
 <body>
-  <!--
-        th:inline="javascript" と書くことで，javascriptコード中にthymeleafを利用して変数をJavaから受け取ることができるようになる
-        表示の際にはdocument.getElementByIdのようなDOM操作のAPIを利用し，値を表示する
-        今回の場合 #num_list というIDを利用して操作している
-        javascriptのDOM操作については適宜検索してみること
-      -->
-  <p>
   <form action="/lec02" method="post">
-    <input type="string" name="name" />
-    <input type="submit" value="入室">
+    <input type="text" name="name" />
+    <input type="submit" value="入室" />
   </form>
-
-  <div>
-    <!-- sumRangeに配列として数値が入っている
-        for each文としてすべての数値を表示する-->
-  </div>
-  </p>
 </body>
 
 </html>
