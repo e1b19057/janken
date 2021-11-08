@@ -14,7 +14,6 @@ import oit.is.z0846.kaizi.janken.model.Janken;
  * @RequestMapping("/sample26")をクラスの前につけると，このクラスのすべてのメソッドは/sample26で呼び出されることを表す
  */
 @Controller
-@RequestMapping("/lec02")
 public class Lec02Controller {
 
   /**
@@ -22,12 +21,12 @@ public class Lec02Controller {
    *
    * @return
    */
-  @GetMapping()
+  @GetMapping("/lec02")
   public String lec02() {
     return "lec02.html";
   }
 
-  @PostMapping
+  @PostMapping("/lec02")
   public String lec02(@RequestParam String name, ModelMap model) {
     name = "Hi" + " " + name;
     model.addAttribute("name", name);
